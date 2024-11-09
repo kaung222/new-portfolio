@@ -31,8 +31,8 @@ const Projects = () => {
                   </CardHeader>
                   <CardContent className=" ">
                     <div className="gap-3 flex">
-                      {project.stacks.map((stack) => (
-                        <p>{stack}</p>
+                      {project.stacks.map((stack, index) => (
+                        <p key={index}>{stack}</p>
                       ))}
                     </div>
 
